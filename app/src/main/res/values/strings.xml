@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ArchitectureComponents</string>
+    <string name="i_am_life_cycle_owner_activity">I am life cycle owner Activity</string>
+    <string name="i_am_life_cycle_owner_fragment">I am life cycle owner Fragment</string>
+</resources>
