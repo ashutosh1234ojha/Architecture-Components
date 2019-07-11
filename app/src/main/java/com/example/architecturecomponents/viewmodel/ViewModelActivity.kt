@@ -38,14 +38,10 @@ class ViewModelActivity : AppCompatActivity(), View.OnClickListener {
         tvScoreOne = findViewById(R.id.tvScoreOne)
         tvScoreSecond = findViewById(R.id.tvScoreSecond)
 
-
         Utility.setOnClickListener(this, ivFirstPlus!!, ivFirstMinus!!, ivSecondMinus!!, ivSecondPlus!!)
-
-
 
         setScoreOfTeamA()
         setScoreOfTeamB()
-
     }
 
     private fun setScoreOfTeamA() {
@@ -62,26 +58,20 @@ class ViewModelActivity : AppCompatActivity(), View.OnClickListener {
             ivFirstPlus?.id -> {
                 myViewModel.scoreTeamA++
                 setScoreOfTeamA()
-
-
             }
 
             ivFirstMinus?.id -> {
                 myViewModel.scoreTeamA--
-
                 setScoreOfTeamA()
-
             }
 
             ivSecondPlus?.id -> {
                 myViewModel.scoreTeamB++
                 setScoreOfTeamB()
-
             }
 
             ivSecondMinus?.id -> {
                 myViewModel.scoreTeamA--
-
                 setScoreOfTeamB()
 
             }

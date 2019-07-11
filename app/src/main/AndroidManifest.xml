@@ -11,7 +11,7 @@
             android:theme="@style/AppTheme">
 
         <activity
-                android:name=".viewmodel.ViewModelActivity"
+                android:name=".livedata.NameViewModelActivity"
                 android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
