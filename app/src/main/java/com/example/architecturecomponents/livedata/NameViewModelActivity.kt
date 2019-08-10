@@ -21,7 +21,7 @@ class NameViewModelActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(com.example.architecturecomponents.R.layout.activity_name_viewmodel)
+        setContentView(R.layout.activity_name_viewmodel)
         nameViewModel = ViewModelProviders.of(this).get(NameViewModel::class.java)
 
         init()

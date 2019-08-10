@@ -9,8 +9,8 @@ class LfeCycleOwnerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_life_cycle_owner)
-        val lifecycleObserVer = ActivityLifeCycleObserver(lifecycle)
-        lifecycle.addObserver(lifecycleObserVer)
+        val lifecycleObserver = ActivityLifeCycleObserver(lifecycle)
+        lifecycle.addObserver(lifecycleObserver)
 
         supportFragmentManager.beginTransaction().replace(R.id.flContainer, LifeCycleOwnerFragment()).commit()
     }
