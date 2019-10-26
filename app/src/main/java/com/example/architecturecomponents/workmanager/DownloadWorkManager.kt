@@ -30,9 +30,6 @@ class DownloadWorkManager(context: Context, workerParameters: WorkerParameters) 
     override fun doWork(): ListenableWorker.Result {
 
         val path = inputData.getString("Download_Path")
-
-
-//        val path = "https://www.google.com/logos/2013/estonia_independence_day_2013-1057005.3-hp.jpg"
         val file_length: Int
 
         Log.i("Info: path", path)
@@ -42,9 +39,6 @@ class DownloadWorkManager(context: Context, workerParameters: WorkerParameters) 
             urlConnection.connect()
             file_length = urlConnection.contentLength
 
-            /**
-             * Create a folder
-             */
             val new_folder = File(Environment.getExternalStorageDirectory().absolutePath, "myfolder1")
             if (!new_folder.exists()) {
                 if (new_folder.mkdir()) {

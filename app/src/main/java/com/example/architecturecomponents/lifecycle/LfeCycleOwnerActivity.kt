@@ -13,5 +13,7 @@ class LfeCycleOwnerActivity : AppCompatActivity() {
         lifecycle.addObserver(lifecycleObserver)
 
         supportFragmentManager.beginTransaction().replace(R.id.flContainer, LifeCycleOwnerFragment()).commit()
+
+
     }
 }

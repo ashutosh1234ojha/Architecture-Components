@@ -25,25 +25,6 @@ class WorkManagerActivity : AppCompatActivity() {
         progressBar = findViewById(com.example.architecturecomponents.R.id.ProgressBar)
         ivImage = findViewById(com.example.architecturecomponents.R.id.ivImage)
 
-//        val workManager = WorkManager.getInstance()
-//
-//        val constraints = Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build()
-//
-//        val task = OneTimeWorkRequest.Builder(DownloadWorkManager::class.java).setConstraints(constraints).build()
-//
-//        workManager.enqueue(task)
-//
-//
-////        val periodicWorkRequest = PeriodicWorkRequest.Builder(DownLoadFileWorkManager::class.java, PERIODIC_INTERVAL, TimeUnit.MINUTES)
-////            .setConstraints(Constraints.Builder().setRequiredNetworkType(NetworkType.CONNECTED).build())
-////            .build()
-////        workManager.enqueue(periodicWorkRequest)
-//
-//        workManager.getWorkInfoByIdLiveData(task.id).observe(this@WorkManagerActivity, Observer {
-//            it?.outputData
-//
-//        })
-
         val data: Data = Data.Builder()
             .putString(
                 "Download_Path",
@@ -58,7 +39,6 @@ class WorkManagerActivity : AppCompatActivity() {
         WorkManager.getInstance().enqueue(oneTimeWorkRequest)
         LiveDataHelper.getInstance().observePercentage()
             .observe(this, Observer<Int> {
-                // update your progressBar here.
 
                 progressBar?.progress = it!!
 

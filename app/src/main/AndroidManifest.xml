@@ -15,7 +15,7 @@
             android:theme="@style/AppTheme">
 
         <activity
-                android:name=".workmanager.WorkManagerActivity"
+                android:name=".dagger.DaggerMainActivity"
                 android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
