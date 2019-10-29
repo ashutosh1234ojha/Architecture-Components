@@ -15,7 +15,7 @@
             android:theme="@style/AppTheme">
 
         <activity
-                android:name=".dagger.DaggerMainActivity"
+                android:name=".mvvm.NotesActivity"
                 android:windowSoftInputMode="adjustPan|stateAlwaysHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
