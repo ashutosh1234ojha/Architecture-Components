@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Architecture-Components.iml" filepath="$PROJECT_DIR$/Architecture-Components.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Architecture-Components.iml" filepath="$PROJECT_DIR$/Architecture-Components.iml" group="Architecture-Components" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="Architecture-Components/app" />
     </modules>
   </component>
 </project>
